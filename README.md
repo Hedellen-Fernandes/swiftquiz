@@ -1,2 +1,2 @@
 # swiftquiz
-Aplicativo de perguntas e resposta desenvolvido em Swift.
+Aplicativo de perguntas e respostas, desenvolvido em Swift.
