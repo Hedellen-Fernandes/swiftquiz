@@ -68,24 +68,10 @@ class QuizMenager {
         return _totalCorrectAnswers
     }
 
-//    func refreshQuiz() {
-//         let randomIndex = Int(arc4random_uniform(UInt32(quizes.count)))
-//         let quizData = quizes[randomIndex]
-//         quiz = Quiz(question: quizData.question, options: quizData.options, correctedAnswer: quizData.correctAnswer)
-//    }
- 
-// Perguntas sequenciais
-    
-    var actualQuestion: Int = 0
-    
     func refreshQuiz() {
-        
-        let qvc = QuizViewController()
-        if actualQuestion < quizes.count {
-            let quizData = quizes[actualQuestion]
-            quiz = Quiz(question: quizData.question, options: quizData.options, correctedAnswer: quizData.correctAnswer)
-            actualQuestion = actualQuestion + 1
-        }
+         let randomIndex = Int(arc4random_uniform(UInt32(quizes.count)))
+         let quizData = quizes[randomIndex]
+         quiz = Quiz(question: quizData.question, options: quizData.options, correctedAnswer: quizData.correctAnswer)
     }
     
     func validateAnswer(index: Int) {
